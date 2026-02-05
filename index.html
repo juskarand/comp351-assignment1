@@ -1,3 +1,59 @@
-<html>
-    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COMP351 Assignment 1</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Todos Explorer</h1>
+    </header>
+
+    <main>
+        <section class="controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="search..." />
+            </div>
+
+            <div class="filter-controls">
+                <label for="userFilter">User:</label>
+                <select id="userFilter">
+                    <option value="">All Users</option>
+                </select>
+
+                <label for="statusFilter">Status:</label>
+                <select id="statusFilter">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="pending">Pending</option>
+                </select>
+
+                <label for="sortSelect">Sort:</label>
+                <select id="sortSelect">
+                    <option value="id">By ID</option>
+                    <option value="title">By Title (A–Z)</option>
+                    <option value="status">By Status</option>
+                </select>
+
+                <button id="refreshBtn">Refresh</button>
+                <button id="nextUserBtn">Next User</button>
+            </div>
+
+            <div id="stats" class="stats"></div>
+        </section>
+
+        <section id="content" class="todos-container">
+
+        </section>
+    </main>
+
+    <footer>
+        <p>COMP351 — Advanced Website Programming | Assignment 1 | #300199418 | Juskaran Dhanjal</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
 </html>
